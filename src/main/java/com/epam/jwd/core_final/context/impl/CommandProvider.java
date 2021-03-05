@@ -37,8 +37,8 @@ public class CommandProvider {
 
     public Command getCommand(String name){
         String [] splitName = name.split(";");
-        CommandName commandName = null;
-        Command command = null;
+        CommandName commandName;
+        Command command;
         try {
             commandName = CommandName.valueOf(splitName[0].toUpperCase());
             command = commands.get(commandName);
