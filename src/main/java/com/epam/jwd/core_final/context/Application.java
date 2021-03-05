@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public interface Application {
 
-    static ApplicationMenu start() throws InvalidStateException, InterruptedException {
+    static ApplicationMenu start() {
         final Supplier<ApplicationContext> applicationContextSupplier = () -> new NassaContext();// todo
         ApplicationMenu applicationMenu = applicationContextSupplier::get;
         final NassaContext nassaContext = new NassaContext();
