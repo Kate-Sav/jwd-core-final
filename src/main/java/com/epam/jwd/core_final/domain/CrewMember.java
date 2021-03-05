@@ -1,7 +1,5 @@
 package com.epam.jwd.core_final.domain;
 
-import java.io.File;
-import java.util.List;
 
 /**
  * Expected fields:
