@@ -12,44 +12,23 @@ import java.util.List;
  * Should be a builder for {@link com.epam.jwd.core_final.domain.FlightMission} fields
  */
 public class FlightMissionCriteria extends Criteria<FlightMission> {
-    /*private LocalDate startDate;
-    private LocalDate endDate;
-    private Long distance;
-    private Spaceship spaceship;
-    private Spaceship assignedSpaceShip;
-    private List<CrewMember> assignedCrew;
-    private MissionResult missionResult;
+    private LocalDateTime startDate;
+    private Planet planetFrom;
+    private Planet planetTo;
 
-    public void setStartDate(LocalDate startDate) {
+    public void setStartDate(LocalDateTime startDate) {
         this.startDate = startDate;
     }
 
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
+    public void setPlanetFrom(Planet planetFrom) {
+        this.planetFrom = planetFrom;
     }
 
-    public void setDistance(Long distance) {
-        this.distance = distance;
-    }
-
-    public void setSpaceship(Spaceship spaceship) {
-        this.spaceship = spaceship;
-    }
-
-    public void setAssignedSpaceShip(Spaceship assignedSpaceShip) {
-        this.assignedSpaceShip = assignedSpaceShip;
-    }
-
-    public void setAssignedCrew(List<CrewMember> assignedCrew) {
-        this.assignedCrew = assignedCrew;
-    }
-
-    public void setMissionResult(MissionResult missionResult) {
-        this.missionResult = missionResult;
+    public void setPlanetTo(Planet planetTo) {
+        this.planetTo = planetTo;
     }
 
     public FlightMission getFlightMission(){
-        return new FlightMission(getName(), startDate,endDate,distance,spaceship,assignedSpaceShip,
-                assignedCrew,missionResult);
-    }*/
+        return new FlightMission(getName(), startDate, planetFrom, planetTo);
+    }
 }
