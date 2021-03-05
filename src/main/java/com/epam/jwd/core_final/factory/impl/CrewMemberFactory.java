@@ -12,11 +12,6 @@ public class CrewMemberFactory implements EntityFactory<CrewMember> {
 
     @Override
     public CrewMember create(Object... args) {
-        CrewMemberCriteria builder = new CrewMemberCriteria();
-        builder.setRole((Role)args[0]);
-        builder.setName((String)args[1]);
-        builder.setRank((Rank)args[2]);
-
-        return builder.getCrewMember();
+        return null;
     }
 }
