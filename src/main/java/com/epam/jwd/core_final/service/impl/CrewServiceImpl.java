@@ -53,7 +53,6 @@ public class CrewServiceImpl implements CrewService {
                     .filter(c -> c.getName().equals(criteria.getName()))
                     .collect(Collectors.toList());
 
-            // Maybe throw NoSuchElementException, if there is no such member???
             return membersListByCriteria;
         }catch (ServiceException e){
             throw  e;
